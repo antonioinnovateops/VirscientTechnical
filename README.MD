@@ -1,6 +1,6 @@
-# Project Name
+#  First Technical Assessment
 
-Project Name is a simple client-server file transfer application.
+First Technical Assessment is a simple client-server file transfer application.
 
 ## Overview
 
@@ -43,16 +43,19 @@ Execut in a terminal the follwinf command:
 
 ## Runing multiple clients
 
-First create a output folder for your cliente dum the downloaded files"
-
+Begin by establishing an output folder for your client where you can store the downloaded files.
 
 ```
 mkdir -p build/output
 ```
 
-After that Run the follwing script to deply multiple instance to emulate multiple connectoinf to the server:
+Following that, execute the provided script to deploy multiple instances and simulate multiple connections to the server.
 
 ```
 script.sh file.txt
 ```
 
+
+```
+./build/client -c 127.0.0.1 -f file.txt -o build/output/ 
+```
